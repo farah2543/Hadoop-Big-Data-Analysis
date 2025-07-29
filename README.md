@@ -2,7 +2,6 @@
 
 This project explores the use of Hadoop MapReduce for large-scale data processing and distributed computation. It covers core big data operations such as joins, set differences, graph-based aggregations, and distributed sorting using MapReduce on Hadoop Distributed File System (HDFS).
 
-## 📁 Repository: `Hadoop-Big-Data-Analysis`
 
 This repository contains a collection of Hadoop MapReduce programs developed to simulate real-world big data tasks using structured and semi-structured datasets. It focuses on implementing:
 
@@ -13,7 +12,7 @@ This repository contains a collection of Hadoop MapReduce programs developed to 
 
 ---
 
-## 🔧 Technologies Used
+## Technologies Used
 
 - Java (Hadoop MapReduce API)  
 - Hadoop 3.x  
@@ -22,9 +21,9 @@ This repository contains a collection of Hadoop MapReduce programs developed to 
 
 ---
 
-## 📌 Project Features
+##  Project Features
 
-### ✅ Join Operations
+### Join Operations
 
 Performs different types of joins on relational data using custom `Mapper` and `Reducer` logic.
 
@@ -40,7 +39,7 @@ Performs different types of joins on relational data using custom `Mapper` and `
 #### 3. Set Difference Operation
 - Computes `A1[T1] - A1[T2]`, i.e., the values of A1 that appear in `T1` but not in `T2`.  
 
-### 🔁 Graph Aggregation: Friends of Friends
+### Graph Aggregation: Friends of Friends
 
 Given a weighted graph of friendships, this job computes the **Friends of Friends (FoF)** for a specified user (e.g., `P1`) and aggregates the path weights.
 
@@ -50,7 +49,7 @@ Given a weighted graph of friendships, this job computes the **Friends of Friend
 
 ---
 
-### 🔠 Distributed Sorting on HDFS
+### Distributed Sorting on HDFS
 
 Implements a MapReduce job that sorts key/value pairs by key using Hadoop's built-in sorting mechanism.
 
@@ -60,7 +59,7 @@ Implements a MapReduce job that sorts key/value pairs by key using Hadoop's buil
 
 ---
 
-## 🧪 How to Run
+## How to Run
 
 > Assumes Hadoop is installed and configured correctly on your machine or cluster.
 
@@ -83,7 +82,7 @@ hadoop jar joinjob.jar JoinJob /user/hadoop/input /user/hadoop/output
 ```bash
 hdfs dfs -cat /user/hadoop/output/part-*
 ```
-##📂 Directory Structure
+## Directory Structure
 Hadoop-Big-Data-Analysis/
 ├── data/
 │   └── input/               # Sample datasets for each question
@@ -94,13 +93,13 @@ Hadoop-Big-Data-Analysis/
 │   └── SortJob.java         # HDFS sorting program
 ├── README.md
 
-##🚀 Use Cases
+## Use Cases
 
 Educational: Demonstrate core big data operations in a Hadoop environment.
 Analytical: Explore how basic SQL-like operations translate to distributed systems.
 Engineering: Build reusable MapReduce jobs for custom data processing pipelines.
 
-##📜 License
+## License
 This project is licensed under the MIT License. See the LICENSE file for more information.
 
 
